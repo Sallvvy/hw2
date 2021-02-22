@@ -5,12 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digimentors | Home</title>
 <style>
-	body{
+	
+		body{
 		grid-template-areas: 
 			"header header"
 			"left_section right_section"
 			"footer footer";
 		}
+
+	@media screen and (max-width: 350px) {
+	body{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"header"
+			"header"
+			"left_section"
+			"right_section"
+			"footer";
+		}}
 	.left_section {
 		display: grid;
 		grid-area: left_section;
