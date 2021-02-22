@@ -7,14 +7,6 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media screen and (max-width: 350px){
-	#logo{
-		font-size:80px;
-	}
-	#nav{
-		font-size:60px;
-	}
-}
 body{
 	margin:0;
 	max-width: 100vw;
