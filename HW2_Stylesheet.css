@@ -7,7 +7,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media (max-width: 350px){
+@media screen and (max-width: 350px){
 	#logo{
 		font-size:10px;
 	}
