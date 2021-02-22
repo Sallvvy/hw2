@@ -7,12 +7,12 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media screen and (max-width: 350px){
+@media (max-width: 350px){
 	#logo{
-		font-size:80px;
+		font-size:10px;
 	}
 	#nav{
-		font-size:60px;
+		font-size:4px;
 	}
 }
 body{
@@ -42,7 +42,7 @@ header #logo{
 }
 header #nav{
 		display:grid;
-		grid-gap: 4px;
+		grid-gap: 3px;
 		grid-template-columns: repeat(4,1fr);
 		padding: 30px 20px 0px 30px;
 		justify-items: end;
