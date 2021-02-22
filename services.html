@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Digimentors | Services</title>
+<style>
+	body{
+		grid-template-areas: 
+			"header header"
+			"b_image title"
+			"left_section1 right_section1"
+			"left_section2 right_section2"
+			"footer footer";
+		}
+	#b_image{
+		grid-area:b_image;
+		position:relative;
+	}
+	#title{
+		grid-area:title;
+		justify-content: center;
+		align-content: center;
+		position:relative;
+	}
+	.left_section1{
+		position:relative;
+		grid-area:left_section1;
+		justify-content: center;
+		padding: 10% 20% 5% 20%;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		text-align: center;
+	}
+	.right_section1{
+		position:relative;
+		grid-area:right_section1;
+		justify-content: center;
+		padding: 10% 20% 5% 20%;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		text-align: center;
+	}
+	.left_section2{
+		position:relative;
+		grid-area:left_section2;
+		justify-content: center;
+		padding: 0% 20% 15% 20%;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		text-align: center;
+	}
+	.right_section2{
+		position:relative;
+		grid-area:right_section2;
+		justify-content: center;
+		padding: 0% 20% 15% 20%;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		text-align: center;
+	}
+	@media screen and (max-width: 600px) {
+  		#title h1{
+    		font-size: 100%;
+  		}
+		#title{
+			max-height: 60px;
+		}
+	}
+	@media screen and (max-width: 350px) {
+  		.left_section h1{
+    		font-size: 30px;
+  		}
+		.left_section p{
+    		font-size: 10px;
+  		}
+		body{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"header"
+			"header"
+			"left_section1"
+			"left_section2"
+			"right_section1"
+			"right_section2"
+			"footer";
+		}}
+</style>
+<link rel="stylesheet" type="text/css" href="HW2_Stylesheet.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo">DIGIMENTORS</div>
+		<div id="nav">
+			<br/>
+			<a href="index.html">HOME</a>
+			<a href="services.html">SERVICES</a>
+			<a href="contact.html">CONTACT</a>
+		</div>
+	</header>
+	
+	<div id="b_image" style="background-image: url(i1.jpg) ; background-position: center; height:250px; background-size:cover"></div>
+	
+	<div id="title" style="text-align: center; height:250px; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; font-size: 300%; color:#000; background-color:#F84649"><h1><strong>SERVICES</strong></h1></div>
+	
+	<div class="left_section1">
+		<h1 style="text-align: center; font-size: 200%">Virtual Events</h1>
+		<p style="font-size: 110%">We’ve produced thousands of hours of live events and shows for clients of all sizes. No matter the size, no matter the audience, we have the solution to make your virtual event shine.</p>
+	</div>
+	
+	<div class="right_section1">
+		<h1 style="text-align: center; font-size: 200%">Digital Consulting</h1>
+		<p style="font-size: 110%">Our team does everything from social media content to C-suite digital strategy. We bring together a broad range of experience across digital disciplines.</p>
+	</div>
+	<div class="left_section2">
+		<h1 style="text-align: center; font-size: 200%">Production</h1>
+		<p style="font-size: 110%">Getting great content in front of the right people is crucial, and it’s what we do best. We’ll help you produce high-quality virtual events, shareable content, and build the toolkit to use it successfully.</p>
+	</div>
+	<div class="right_section2">
+		<h1 style="text-align: center; font-size: 200%">Workshops</h1>
+		<p style="font-size: 110%">We’ll teach your teams  new platforms, new ways  of collaborating, and more. We’re passionate about social media and digital strategy, and we can set up sessions tailor-made for you.</p>
+	</div>
+	<footer>
+		<h3>&copy; 2021 DIGIMENTORS</h3>
+	</footer>
+</body>
+</html>
