@@ -42,7 +42,7 @@ header #logo{
 }
 header #nav{
 		display:grid;
-		grid-gap: 1em;
+		grid-gap: 2px;
 		grid-template-columns: repeat(4,1fr);
 		padding: 30px 20px 0px 30px;
 		justify-items: end;
