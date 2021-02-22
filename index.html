@@ -9,10 +9,20 @@
 		body{
 		grid-template-areas: 
 			"header header"
-			"left_section left_section"
-			"right_section right_section"
+			"left_section right_section"
 			"footer footer";
 		}
+
+	@media screen and (max-width: 350px) {
+	body{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"header"
+			"header"
+			"left_section"
+			"right_section"
+			"footer";
+		}}
 	.left_section {
 		display: grid;
 		grid-area: left_section;
@@ -50,11 +60,13 @@
     		font-size: 50px;
   		}
 	}
-	@media screen and (min-width: 736px) {
-		grid-template-areas: 
-			"header header"
-			"left_section right-section"
-			"footer footer";
+	@media screen and (max-width: 350px) {
+		.left_section{
+    		font-size: 15px;
+		}
+		.right_section{
+    		font-size: 22px;
+  		}
   	}
 </style>
 <link rel="stylesheet" type="text/css" href="HW2_Stylesheet.css">
